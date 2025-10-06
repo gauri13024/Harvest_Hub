@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Farms - FarmConnect</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/browse-farms.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-tractor"></i>
+                <span>FarmConnect</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="browse-farms.html" class="nav-link active">Browse Farms</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link">Login/Signup</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Browse Farms Header -->
+    <section class="browse-header">
+        <div class="container">
+            <h1>Discover Farming Opportunities</h1>
+            <p>Browse through our verified farms and find the perfect investment opportunity</p>
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="filters">
+        <div class="container">
+            <div class="filter-options">
+                <div class="filter-group">
+                    <label for="location">Location</label>
+                    <select id="location">
+                        <option value="">Any Location</option>
+                        <option value="punjab">Punjab</option>
+                        <option value="maharashtra">Maharashtra</option>
+                        <option value="karnataka">Karnataka</option>
+                        <option value="uttar-pradesh">Uttar Pradesh</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="crop-type">Crop Type</label>
+                    <select id="crop-type">
+                        <option value="">Any Crop</option>
+                        <option value="wheat">Wheat</option>
+                        <option value="rice">Rice</option>
+                        <option value="vegetables">Vegetables</option>
+                        <option value="fruits">Fruits</option>
+                        <option value="organic">Organic</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="investment-range">Investment Range</label>
+                    <select id="investment-range">
+                        <option value="">Any Range</option>
+                        <option value="low">₹50,000 - ₹2,00,000</option>
+                        <option value="medium">₹2,00,000 - ₹5,00,000</option>
+                        <option value="high">₹5,00,000+</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary" id="apply-filters">Apply Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Farms Grid -->
+    <section class="farms-listing">
+        <div class="container">
+            <div class="farms-grid" id="farms-grid">
+                <!-- Farm cards will be dynamically loaded here -->
+            </div>
+            <div class="load-more">
+                <button class="btn btn-outline" id="load-more">Load More Farms</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>FarmConnect</h3>
+                    <p>Connecting agricultural passion with investment opportunities for mutual growth and prosperity.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="browse-farms.html">Browse Farms</a></li>
+                        <li><a href="login.html">Login/Signup</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-envelope"></i> info@farmconnect.com</p>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-map-marker-alt"></i> New Delhi, India</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 FarmConnect. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/browse-farms.js"></script>
+</body>
+</html>

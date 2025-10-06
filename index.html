@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HarvestHub - Connecting Farmers & Investors</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-tractor"></i>
+                <span>HarvestHub</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="browse-farms.html" class="nav-link">Browse Farms</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link">Login/Signup</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Connecting Farmers with Investors</h1>
+            <p>HarvestHub bridges the gap between agricultural producers and investment opportunities. Grow together, prosper together.</p>
+            <div class="hero-buttons">
+                <a href="browse-farms.html" class="btn btn-primary">Browse Farms</a>
+                <a href="login.html" class="btn btn-secondary">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>How HarvestHub Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <h3>1. Create Account</h3>
+                    <p>Farmers and investors create profiles with their details and preferences.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>2. List or Browse Farms</h3>
+                    <p>Farmers list their land details. Investors browse available opportunities.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>3. Connect & Invest</h3>
+                    <p>Investors fund farms in installments. Farmers grow with financial support.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>4. Share Profits</h3>
+                    <p>After harvest, profits are shared between farmers and investors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Farms Section -->
+    <section class="featured-farms">
+        <div class="container">
+            <h2>Featured Farms</h2>
+            <div class="farms-grid">
+                <!-- Farm cards will be dynamically loaded here -->
+            </div>
+            <div class="view-all">
+                <a href="browse-farms.html" class="btn btn-outline">View All Farms</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>Success Stories</h2>
+            <div class="testimonial-cards">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"HarvestHub helped me secure funding for my organic vegetable farm. The process was smooth and the investors were genuinely interested in sustainable agriculture."</p>
+                        <div class="testimonial-author">
+                            <img src="images/farmer-profile.jpg" alt="Farmer">
+                            <div>
+                                <h4>Rajesh Kumar</h4>
+                                <span>Organic Farmer, Punjab</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"As an investor, I appreciate the transparency HarvestHub offers. I can track my investments and see exactly how my money is helping farmers grow."</p>
+                        <div class="testimonial-author">
+                            <img src="images/investor-profile.jpg" alt="Investor">
+                            <div>
+                                <h4>Priya Sharma</h4>
+                                <span>Investor, Mumbai</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>FarmConnect</h3>
+                    <p>Connecting agricultural passion with investment opportunities for mutual growth and prosperity.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="browse-farms.html">Browse Farms</a></li>
+                        <li><a href="login.html">Login/Signup</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-envelope"></i> info@farmconnect.com</p>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-map-marker-alt"></i> New Delhi, India</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 FarmConnect. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

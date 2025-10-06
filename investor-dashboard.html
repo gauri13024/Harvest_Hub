@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investor Dashboard - FarmConnect</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-tractor"></i>
+                <span>FarmConnect</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="browse-farms.html" class="nav-link">Browse Farms</a></li>
+                <li class="nav-item"><a href="investor-dashboard.html" class="nav-link active">Dashboard</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Messages</a></li>
+                <li class="nav-item"><a href="#" class="nav-link logout">Logout</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Header -->
+    <section class="dashboard-header">
+        <div class="container">
+            <div class="dashboard-welcome">
+                <h1>Welcome back, Priya!</h1>
+                <p>Track your investments and returns</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Stats -->
+    <section class="dashboard-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-rupee-sign"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>₹4,75,000</h3>
+                        <p>Total Invested</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>₹68,500</h3>
+                        <p>Total Returns</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-percentage"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>18.4%</h3>
+                        <p>Average ROI</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>7</h3>
+                        <p>Active Farms</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Content -->
+    <section class="dashboard-content">
+        <div class="container">
+            <div class="dashboard-grid">
+                <!-- My Investments Section -->
+                <div class="dashboard-section">
+                    <div class="section-header">
+                        <h2>My Investments</h2>
+                        <button class="btn btn-primary" id="browse-farms-btn">Browse New Farms</button>
+                    </div>
+                    <div class="investments-list">
+                        <div class="investment-item">
+                            <div class="investment-image" style="background-image: url('images/farm1.jpg');"></div>
+                            <div class="investment-details">
+                                <h3>Organic Vegetable Farm</h3>
+                                <p class="farmer-name">By Rajesh Kumar</p>
+                                <div class="investment-stats">
+                                    <div class="investment-stat">
+                                        <span class="value">₹85,000</span>
+                                        <span class="label">Your Investment</span>
+                                    </div>
+                                    <div class="investment-stat">
+                                        <span class="value">₹12,750</span>
+                                        <span class="label">Returns Received</span>
+                                    </div>
+                                    <div class="investment-stat">
+                                        <span class="value">15%</span>
+                                        <span class="label">ROI</span>
+                                    </div>
+                                </div>
+                                <div class="investment-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 65%;"></div>
+                                    </div>
+                                    <div class="progress-text">
+                                        <span>65% funded</span>
+                                        <span>65 days to harvest</span>
+                                    </div>
+                                </div>
+                                <div class="investment-actions">
+                                    <button class="btn btn-outline">View Details</button>
+                                    <button class="btn btn-primary">Add More</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="investment-item">
+                            <div class="investment-image" style="background-image: url('images/farm3.jpg');"></div>
+                            <div class="investment-details">
+                                <h3>Dairy Farm Expansion</h3>
+                                <p class="farmer-name">By Sanjay Mehta</p>
+                                <div class="investment-stats">
+                                    <div class="investment-stat">
+                                        <span class="value">₹2,00,000</span>
+                                        <span class="label">Your Investment</span>
+                                    </div>
+                                    <div class="investment-stat">
+                                        <span class="value">₹45,000</span>
+                                        <span class="label">Returns Received</span>
+                                    </div>
+                                    <div class="investment-stat">
+                                        <span class="value">22.5%</span>
+                                        <span class="label">ROI</span>
+                                    </div>
+                                </div>
+                                <div class="investment-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 100%;"></div>
+                                    </div>
+                                    <div class="progress-text">
+                                        <span>100% funded</span>
+                                        <span>Harvest completed</span>
+                                    </div>
+                                </div>
+                                <div class="investment-actions">
+                                    <button class="btn btn-outline">View Details</button>
+                                    <button class="btn btn-primary">Reinvest</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Activity Section -->
+                <div class="dashboard-section">
+                    <div class="section-header">
+                        <h2>Recent Activity</h2>
+                    </div>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-rupee-sign"></i>
+                            </div>
+                            <div class="activity-content">
+                                <p>You received ₹8,500 return from <strong>Organic Vegetable Farm</strong></p>
+                                <span class="activity-time">1 week ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-comment"></i>
+                            </div>
+                            <div class="activity-content">
+                                <p><strong>Rajesh Kumar</strong> updated progress on Organic Vegetable Farm</p>
+                                <span class="activity-time">2 weeks ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="activity-content">
+                                <p>You invested ₹25,000 in <strong>Wheat Cultivation Farm</strong></p>
+                                <span class="activity-time">3 weeks ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Performance Section -->
+                <div class="dashboard-section">
+                    <div class="section-header">
+                        <h2>Portfolio Performance</h2>
+                    </div>
+                    <div class="portfolio-performance">
+                        <div class="performance-chart">
+                            <!-- Simple chart representation -->
+                            <div class="chart-placeholder">
+                                <p>Investment Growth Chart</p>
+                                <div class="chart-bars">
+                                    <div class="chart-bar" style="height: 40%;">Jan</div>
+                                    <div class="chart-bar" style="height: 55%;">Feb</div>
+                                    <div class="chart-bar" style="height: 70%;">Mar</div>
+                                    <div class="chart-bar" style="height: 65%;">Apr</div>
+                                    <div class="chart-bar" style="height: 80%;">May</div>
+                                    <div class="chart-bar" style="height: 95%;">Jun</div>
+                                    <div class="chart-bar" style="height: 100%;">Jul</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="performance-summary">
+                            <div class="summary-item">
+                                <span>Current Portfolio Value:</span>
+                                <span class="value">₹5,43,500</span>
+                            </div>
+                            <div class="summary-item">
+                                <span>Total Invested:</span>
+                                <span class="value">₹4,75,000</span>
+                            </div>
+                            <div class="summary-item">
+                                <span>Net Profit:</span>
+                                <span class="value profit">₹68,500</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>FarmConnect</h3>
+                    <p>Connecting agricultural passion with investment opportunities for mutual growth and prosperity.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="browse-farms.html">Browse Farms</a></li>
+                        <li><a href="login.html">Login/Signup</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-envelope"></i> info@farmconnect.com</p>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-map-marker-alt"></i> New Delhi, India</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 FarmConnect. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Dashboard - FarmConnect</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-tractor"></i>
+                <span>FarmConnect</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="browse-farms.html" class="nav-link">Browse Farms</a></li>
+                <li class="nav-item"><a href="farmer-dashboard.html" class="nav-link active">Dashboard</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Messages</a></li>
+                <li class="nav-item"><a href="#" class="nav-link logout">Logout</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Header -->
+    <section class="dashboard-header">
+        <div class="container">
+            <div class="dashboard-welcome">
+                <h1>Welcome back, Rajesh!</h1>
+                <p>Here's your farming dashboard and investment overview</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Stats -->
+    <section class="dashboard-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-rupee-sign"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>₹2,45,000</h3>
+                        <p>Total Investment Received</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>8</h3>
+                        <p>Active Investors</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>42%</h3>
+                        <p>Funding Progress</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>65 Days</h3>
+                        <p>Until Next Harvest</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Content -->
+    <section class="dashboard-content">
+        <div class="container">
+            <div class="dashboard-grid">
+                <!-- My Farms Section -->
+                <div class="dashboard-section">
+                    <div class="section-header">
+                        <h2>My Farms</h2>
+                        <button class="btn btn-primary" id="add-farm-btn">Add New Farm</button>
+                    </div>
+                    <div class="farms-list">
+                        <div class="farm-item">
+                            <div class="farm-image" style="background-image: url('images/farm1.jpg');"></div>
+                            <div class="farm-details">
+                                <h3>Organic Vegetable Farm</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> Punjab, India</p>
+                                <div class="farm-stats">
+                                    <div class="farm-stat">
+                                        <span class="value">₹1,50,000</span>
+                                        <span class="label">Investment Goal</span>
+                                    </div>
+                                    <div class="farm-stat">
+                                        <span class="value">₹85,000</span>
+                                        <span class="label">Raised</span>
+                                    </div>
+                                    <div class="farm-stat">
+                                        <span class="value">5</span>
+                                        <span class="label">Investors</span>
+                                    </div>
+                                </div>
+                                <div class="farm-actions">
+                                    <button class="btn btn-outline">View Details</button>
+                                    <button class="btn btn-primary">Update Progress</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="farm-item">
+                            <div class="farm-image" style="background-image: url('images/farm2.jpg');"></div>
+                            <div class="farm-details">
+                                <h3>Wheat Cultivation</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> Haryana, India</p>
+                                <div class="farm-stats">
+                                    <div class="farm-stat">
+                                        <span class="value">₹3,00,000</span>
+                                        <span class="label">Investment Goal</span>
+                                    </div>
+                                    <div class="farm-stat">
+                                        <span class="value">₹1,60,000</span>
+                                        <span class="label">Raised</span>
+                                    </div>
+                                    <div class="farm-stat">
+                                        <span class="value">3</span>
+                                        <span class="label">Investors</span>
+                                    </div>
+                                </div>
+                                <div class="farm-actions">
+                                    <button class="btn btn-outline">View Details</button>
+                                    <button class="btn btn-primary">Update Progress</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Activity Section -->
+                <div class="dashboard-section">
+                    <div class="section-header">
+                        <h2>Recent Activity</h2>
+                    </div>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-user-plus"></i>
+                            </div>
+                            <div class="activity-content">
+                                <p><strong>Priya Sharma</strong> invested ₹25,000 in your Organic Vegetable Farm</p>
+                                <span class="activity-time">2 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-comment"></i>
+                            </div>
+                            <div class="activity-content">
+                                <p><strong>Amit Patel</strong> sent you a message about your Wheat Cultivation farm</p>
+                                <span class="activity-time">1 day ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="activity-content">
+                                <p>Your Organic Vegetable Farm reached 65% of its funding goal</p>
+                                <span class="activity-time">3 days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Profit Sharing Section -->
+                <div class="dashboard-section">
+                    <div class="section-header">
+                        <h2>Profit Sharing</h2>
+                    </div>
+                    <div class="profit-sharing">
+                        <div class="profit-card">
+                            <h3>Next Distribution</h3>
+                            <div class="profit-details">
+                                <div class="profit-item">
+                                    <span>Estimated Profit:</span>
+                                    <span class="amount">₹85,000</span>
+                                </div>
+                                <div class="profit-item">
+                                    <span>Your Share (60%):</span>
+                                    <span class="amount">₹51,000</span>
+                                </div>
+                                <div class="profit-item">
+                                    <span>Investors Share (40%):</span>
+                                    <span class="amount">₹34,000</span>
+                                </div>
+                                <div class="profit-item">
+                                    <span>Distribution Date:</span>
+                                    <span class="date">Dec 15, 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>FarmConnect</h3>
+                    <p>Connecting agricultural passion with investment opportunities for mutual growth and prosperity.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="browse-farms.html">Browse Farms</a></li>
+                        <li><a href="login.html">Login/Signup</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-envelope"></i> info@farmconnect.com</p>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-map-marker-alt"></i> New Delhi, India</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 FarmConnect. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/dashboard.js"></script>
+</body>
+</html>
